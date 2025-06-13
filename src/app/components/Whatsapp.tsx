@@ -11,24 +11,43 @@ export default function Whatsapp() {
   };
 
   return (
-    <div className="fixed bottom-10 right-10 z-50 w-20 h-16">
-      <div className="flex items-center justify-center">
-        <button 
-          type="button" 
+    <div
+      className="
+        fixed z-50
+        bottom-4 right-4
+        sm:bottom-6 sm:right-6
+        md:bottom-10 md:right-10
+        w-14 h-14
+        sm:w-16 sm:h-16
+        md:w-20 md:h-16
+      "
+    >
+      <div className="flex items-center justify-center w-full h-full">
+        <button
+          type="button"
           onClick={handleClick}
-          className="inline-flex flex-col items-center justify-center p-2 hover:cursor-pointer group 
-            rounded-full shadow-lg transition duration-300 ease-in-out
+          className="
+            inline-flex flex-col items-center justify-center p-2
+            hover:cursor-pointer group rounded-full shadow-lg
+            transition duration-300 ease-in-out
             backdrop-blur-md bg-white/20 hover:bg-white/30
             dark:bg-zinc-800/30 dark:hover:bg-zinc-800/50
-            shadow-amber-500/50 dark:shadow-amber-800/80"
+            shadow-amber-500/50 dark:shadow-amber-800/80
+            w-full h-full
+          "
         >
-          <Image 
-            src="/whatsapp.png" 
-            alt="Icono" 
-            width={50} 
-            height={50} 
-            className="w-12 h-12 group-hover:opacity-70 transition-opacity duration-500 ease-in-out"
-          />          
+          <Image
+            src="/whatsapp.png"
+            alt="Icono"
+            width={48}
+            height={48}
+            className="
+              w-8 h-8
+              sm:w-10 sm:h-10
+              md:w-12 md:h-12
+              group-hover:opacity-70 transition-opacity duration-500 ease-in-out
+            "
+          />
         </button>
       </div>
     </div>

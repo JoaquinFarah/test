@@ -43,29 +43,33 @@ export default function Index() {
       <Navbar />
       <Whatsapp />
 
-      <div className="relative h-screen">
+      <div className="relative min-h-[60vh] h-screen">
         <Slider {...settings}>
           {carouselImages.map((image, index) => (
-            <div key={index} className="relative h-screen">
+            <div key={index} className="relative min-h-[60vh] h-screen">
               <Image
                 src={image.src}
                 alt={`Slide ${index + 1}`}
                 width={2000}
                 height={2000}
                 className="absolute top-0 left-0 w-full h-full object-cover brightness-65 shadow-xl"
+                priority={index === 0}
               />
-              
             </div>
           ))}
         </Slider>
-      </div>
-      <div className="absolute top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-5xl font-semibold text-center p-8 backdrop-blur-md bg-black/30 rounded-lg max-w-4xl">
-        <div className="uppercase">
-          <p className="py-1">Precisión que</p>
-          <p className="py-1"><span style={{ backgroundColor: '#f7950a' }} className=" text-white px-1 rounded">impulsa</span></p>
-          <p className="py-1"> tu industria,</p>
-          <p className="py-1"><span style={{ backgroundColor: '#f7950a' }} className=" text-white px-1 rounded">FORMACIÓN</span></p>
-          <p className="py-1"> que salva vidas</p>
+        <div className="absolute top-1/2 left-1/2 w-[90vw] max-w-2xl md:max-w-3xl lg:max-w-4xl transform -translate-x-1/2 -translate-y-1/2 text-white text-center p-4 sm:p-6 md:p-4 backdrop-blur-xs bg-black/30 rounded-lg">
+          <div className="uppercase">
+            <p className="py-1 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold">Precisión que</p>
+            <p className="py-1 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold">
+              <span style={{ backgroundColor: '#f7950a' }} className="text-white px-1 rounded">impulsa</span>
+            </p>
+            <p className="py-1 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold">tu industria,</p>
+            <p className="py-1 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold">
+              <span style={{ backgroundColor: '#f7950a' }} className="text-white px-1 rounded">FORMACIÓN</span>
+            </p>
+            <p className="py-1 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold">que salva vidas</p>
+          </div>
         </div>
       </div>
 
