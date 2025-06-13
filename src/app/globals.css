@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+
+
+:root {
+  --font-raleway: var(--font-raleway);
+}
+
+body {
+  font-family: var(--font-raleway);
+}
