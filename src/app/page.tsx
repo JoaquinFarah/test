@@ -43,7 +43,7 @@ export default function Index() {
       <Navbar />
       <Whatsapp />
 
-      <div className="relative min-h-[60vh] h-screen">
+      <div className="relative h-screen min-h-screen -mr-10">
         <Slider {...settings}>
           {carouselImages.map((image, index) => (
             <div key={index} className="relative min-h-[60vh] h-screen">

@@ -20,8 +20,8 @@ export default function Footer() {
     window.open(url, '_blank');
   };
   return (
-    <div className="w-full min-h-screen flex flex-col">
-      <div className="relative flex-1 w-full min-h-[32rem]">
+    <div className="relative h-screen min-h-screen -mr-10 bg-gray-50">
+      <div className="relative w-full h-full min-h-screen">
         <Image
           src="/Footer.jpg"
           alt="Icono"
@@ -34,7 +34,13 @@ export default function Footer() {
           style={{ backgroundColor: '#f7950a', zIndex: 1 }}
           className="absolute text-lg sm:text-2xl md:text-3xl flex justify-center items-center mt-8 sm:mt-20 p-2 sm:px-10 md:px-36 font-bold text-center text-white w-full"
         >
-          Somos un equipo de trabajo, con amplia experiencia en el ámbito industrial, lo que nos convierte en tu mejor elección
+          Somos un equipo de trabajo,
+          <br className="block sm:hidden" />
+          con amplia experiencia en 
+          <br className="block sm:hidden" />
+          el ámbito industrial, lo que nos
+          <br className="block sm:hidden" />
+          convierte en tu mejor elección
         </div>
 
         <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-white text-lg sm:text-2xl md:text-3xl font-semibold p-2 sm:p-5 max-w-xs sm:max-w-lg md:max-w-4xl text-center z-10">
