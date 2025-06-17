@@ -35,41 +35,43 @@ const Navbar: React.FC = () => {
 
   return (
     <nav className="fixed w-full z-50 backdrop-blur-sm rounded-b-lg bg-white/30 shadow-lg shadow-amber-500/50 dark:shadow-lg dark:shadow-amber-800/80 hover:bg-amber-500/70 transition duration-300 ease-in-out">
-      <div className="w-full px-2 sm:px-4">
-        <div className="flex justify-between items-center h-16">
-          {/* Logo */}
-          <div className="flex items-center flex-shrink-0 ml-2 sm:ml-6">
-            <Link href="/">
-              <Image
-                src="/logonitido.png"
-                alt="logo"
-                width={120}
-                height={120}
-                className="object-contain max-h-12 sm:max-h-16"
-                priority
-              />
-            </Link>
-          </div>
-
-          {/* Hamburger */}
-          <div className="flex sm:hidden">
-            <button
-              onClick={() => setMenuOpen(!menuOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-amber-700 hover:text-white hover:bg-amber-500 focus:outline-none"
-              aria-label="Menu"
-            >
-              <svg className="h-8 w-8" viewBox="0 0 24 24" fill="none">
-                <path
-                  d={menuOpen
-                    ? "M6 18L18 6M6 6l12 12"
-                    : "M4 8h16M4 16h16"}
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
+      <div className="w-full px-1 sm:px-1">
+        <div className="flex justify-center sm:justify-between items-center h-16 relative">
+          {/* Logo y Hamburguesa centrados en móvil */}
+          <div className="flex items-center justify-center w-full sm:w-auto">
+            {/* Logo */}
+            <div className="flex items-center flex-shrink-0 ml-0 sm:ml-6">
+              <Link href="/">
+                <Image
+                  src="/logonitido.png"
+                  alt="logo"
+                  width={120}
+                  height={120}
+                  className="object-contain max-h-12 sm:max-h-16"
+                  priority
                 />
-              </svg>
-            </button>
+              </Link>
+            </div>
+            {/* Hamburguesa solo en móvil */}
+            <div className="flex sm:hidden ml-2">
+              <button
+                onClick={() => setMenuOpen(!menuOpen)}
+                className="inline-flex items-center justify-center p-2 rounded-md text-amber-700 hover:text-white hover:bg-amber-500 focus:outline-none"
+                aria-label="Menu"
+              >
+                <svg className="h-8 w-8" viewBox="0 0 24 24" fill="none">
+                  <path
+                    d={menuOpen
+                      ? "M6 18L18 6M6 6l12 12"
+                      : "M4 8h16M4 16h16"}
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
           </div>
 
           {/* Links */}

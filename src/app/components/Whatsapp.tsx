@@ -14,8 +14,9 @@ export default function Whatsapp() {
     <div
       className="
         fixed z-50
-        bottom-4 right-4
-        sm:bottom-6 sm:right-6
+        bottom-1/9 right-10
+        -translate-y-1/2
+        sm:top-auto sm:bottom-6 sm:right-6 sm:translate-y-0
         md:bottom-10 md:right-10
         w-14 h-14
         sm:w-16 sm:h-16
