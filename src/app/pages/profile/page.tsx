@@ -12,7 +12,7 @@ export default function ProfilePage() {
       <Navbar />
       <Whatsapp />
 
-      <div className="relative h-screen min-h-screen">
+      <div className="relative h-screen min-h-screen -mr-10">
         <Image
           src="/perfil3.jpg"
           alt="Icono"

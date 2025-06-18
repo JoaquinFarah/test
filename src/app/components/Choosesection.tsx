@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function ChooseSection() {
   return (
-    <div className="relative isolate overflow-hidden bg-white px-4 sm:px-8 md:px-16 lg:px-24 py-16 sm:py-24 lg:overflow-visible -mr-0">
+    <div className="relative isolate overflow-hidden bg-white px-4 sm:px-8 md:px-16 lg:px-24 py-16 sm:py-24 lg:overflow-visible -mr-10">
       {/* Sticky background */}
       <div
         className="pointer-events-none absolute left-0 right-0 -z-10"
@@ -26,7 +26,7 @@ export default function ChooseSection() {
         >
           ¿Por qué elegirnos?
         </h1>
-        <div className="flex justify-center text-center items-center mt-8 sm:mt-10">
+        <div className="flex justify-center text-center items-center mt-8 sm:mt-10 px-5">
           <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl max-w-2xl text-pretty">
             En un mundo donde la seguridad y la eficiencia son primordiales,
             somos{" "}
@@ -58,7 +58,7 @@ export default function ChooseSection() {
             >
               Gestión de Riesgos
             </h2>
-            <p className="mt-3 text-base sm:text-lg md:text-xl lg:text-2xl max-w-xs sm:max-w-sm text-center text-pretty">
+            <p className="mt-3 text-base sm:text-lg md:text-xl lg:text-2xl max-w-xs sm:max-w-sm text-center text-pretty px-5">
               Ofrecemos soluciones avanzadas para identificar y mitigar riesgos
               en entornos laborales
             </p>
@@ -77,7 +77,7 @@ export default function ChooseSection() {
             >
               Seguridad Industrial
             </h2>
-            <p className="mt-3 text-base sm:text-lg md:text-xl lg:text-2xl max-w-xs sm:max-w-sm text-center text-pretty">
+            <p className="mt-3 text-base sm:text-lg md:text-xl lg:text-2xl max-w-xs sm:max-w-sm text-center text-pretty px-5">
               Implementamos estrategias de seguridad industrial que protegen a
               los trabajadores y optimizan la productividad
             </p>
@@ -96,7 +96,7 @@ export default function ChooseSection() {
             >
               Capacitación Especializada
             </h2>
-            <p className="mt-3 text-base sm:text-lg md:text-xl lg:text-2xl max-w-xs sm:max-w-sm text-center text-pretty">
+            <p className="mt-3 text-base sm:text-lg md:text-xl lg:text-2xl max-w-xs sm:max-w-sm text-center text-pretty px-5">
               Brindamos formación especializada para garantizar que los equipos de trabajo
               estén preparados para enfrentar desafíos críticos
             </p>
@@ -119,7 +119,7 @@ export default function ChooseSection() {
             >
               Productos y Servicios de Óptima Calidad
             </h2>
-            <p className="mt-3 text-base sm:text-lg md:text-xl lg:text-2xl max-w-xl text-center text-pretty">
+            <p className="mt-3 text-base sm:text-lg md:text-xl lg:text-2xl max-w-xl text-center text-pretty px-5">
               Contamos con los mejores materiales disponibles en el mercado garantizando la excelencia tanto a nuestro personal como a nuestros clientes, asegurando la tranquilidad para cumplir con las exigencias de los mismos
             </p>
           </div>
@@ -137,7 +137,7 @@ export default function ChooseSection() {
             >
               Experiencia Comprobable
             </h2>
-            <p className="mt-3 text-base sm:text-lg md:text-xl lg:text-2xl max-w-xl text-center text-pretty">
+            <p className="mt-3 text-base sm:text-lg md:text-xl lg:text-2xl max-w-xl text-center text-pretty px-5">
               Porque nuestro staff ha pasado los últimos 30 años en áreas de
               seguridad laboral y capacitaciones permanentes, estamos seguros
               que podemos ofrecer todo lo que sabemos. “Cuando hay conocimiento
