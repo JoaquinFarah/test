@@ -7,7 +7,7 @@ const TripleRight = () => (
   <img
     src="/TripleRight.svg"
     alt="Triple Right"
-    style={{ width: 100, height: 100, verticalAlign: "middle" }}
+    className="w-16 sm:w-20 md:w-24 h-auto align-middle"
     loading="lazy"
   />
 );
@@ -16,7 +16,7 @@ const TripleLeft = () => (
   <img
     src="/TripleLeft.svg"
     alt="Triple Left"
-    style={{ width: 100, height: 100, verticalAlign: "middle" }}
+    className="w-16 sm:w-20 md:w-24 h-auto align-middle"
     loading="lazy"
   />
 );
@@ -77,91 +77,45 @@ const stats = [
 ];
 
 const Workwithussection = () => (
-  <section
-    style={{
-      background: "#f7950a",
-      color: "#000",
-      padding: "48px 0 40px 0",
-      textAlign: "center",
-      fontFamily: "inherit",
-    }}
-  >
-    <div style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: 16, marginBottom: 24 }}>
-      <TripleRight />
-      <span
-        style={{
-          background: "#fff",
-          color: "#111",
-          fontWeight: 700,
-          fontSize: 40,
-          padding: "0 32px",
-          letterSpacing: 1,
-          borderRadius: 2,
-          boxShadow: "0 2px 8px #0001",
-        }}
-      >
+  <section className="bg-[#f7950a] text-black py-12 text-center font-sans">
+    <div className="flex flex-col sm:flex-row justify-center items-center gap-x-4 gap-y-2 mb-6">
+      <span className="hidden sm:block">
+        <TripleRight />
+      </span>
+      <span className="bg-white text-[#111] font-bold text-2xl sm:text-3xl md:text-4xl px-4 sm:px-8 py-2 rounded shadow-md tracking-wider">
         TRABAJEMOS JUNTOS
       </span>
-      <TripleLeft />
+      <span className="hidden sm:block">
+        <TripleLeft />
+      </span>
     </div>
 
-    <div style={{ maxWidth: 900, margin: "0 auto 32px auto" }}>
-      <div style={{ fontWeight: 700, fontSize: 26, marginBottom: 8 }}>
-        Nuestra experiencia y compromiso nos permiten ofrecerte soluciones<br />
+    <div className="max-w-[900px] mx-auto mb-8 px-2">
+      <div className="font-bold text-lg sm:text-xl md:text-2xl mb-2">
+        Nuestra experiencia y compromiso nos permiten ofrecerte soluciones<br className="hidden sm:block" />
         integrales y eficientes para tu proyecto.
       </div>
-      <div style={{ fontWeight: 700, fontSize: 26 }}>
-        Contáctanos y descubre cómo podemos ayudarte a alcanzar tus<br />
+      <div className="font-bold text-lg sm:text-xl md:text-2xl">
+        Contáctanos y descubre cómo podemos ayudarte a alcanzar tus<br className="hidden sm:block" />
         objetivos de manera efectiva y sostenible.
       </div>
     </div>
 
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        gap: 32,
-        flexWrap: "wrap",
-        marginTop: 32,
-      }}
-    >
-
+    <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-8 flex-wrap mt-8 px-2">
       {stats.map((stat, idx) => (
         <div
           key={idx}
-          style={{
-            background: "#7A6A4A",
-            color: "#fff",
-            minWidth: 180,
-            padding: "24px 16px 12px 16px",
-            borderRadius: 2,
-            marginBottom: 16,
-            boxShadow: "0 2px 8px #0002",
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-          }}
+          className="bg-[#7A6A4A] text-white min-w-[180px] w-full sm:w-auto px-4 py-6 rounded shadow-md mb-2 flex flex-col items-center"
         >
-          <div
-            style={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              fontSize: 32,
-              fontWeight: 700,
-              marginBottom: 8,
-              gap: 4,
-            }}
-          >
+          <div className="flex items-center justify-center text-2xl sm:text-3xl md:text-4xl font-bold mb-2 gap-1">
             <span>+</span>
             <AnimatedCounter end={stat.value} />
           </div>
-          <div style={{ fontSize: 18, color: "#000", fontWeight: 400, textAlign: "center" }}>
+          <div className="text-base sm:text-lg text-black font-normal text-center">
             {stat.label}
           </div>
         </div>
       ))}
-
     </div>
   </section>
 );

@@ -34,17 +34,17 @@ export default function HeroSection2() {
 
           <div className="lg:pr-4 mt-20">
             <div className="max-w-3xl text-gray-700">
-              <h1 className="text-5xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">
+              <h1 className="text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">
               NUESTRA VISIÓN
               </h1>
-              <p className="mt-6 text-2xl leading-8">
+              <p className="mt-6 text-xl leading-8">
                 Ser reconocidos como una empresa líder en nuestra especialidad brindando servicios de <span style={{ backgroundColor: '#f7950a' }} className="font-bold">excelencia</span> que superen las expectativas de nuestros clientes y contribuyan al desarrollo sostenible.
               </p>
 
               <h1 className="mt-50 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">
               NUESTRO CRITERIO EMPRESARIAL
               </h1>
-              <div className="mt-6 text-2xl leading-8">
+              <div className="mt-6 text-xl leading-8">
               <p>Nuestro criterio empresarial se fundamenta en la excelencia operativa y la generación de valor sostenible.</p>
               <p className="text-start mt-5">Nos destacamos por:</p>
               <p className="text-start mt-5">• La búsqueda constante de la innovación y mejora continua</p>

@@ -23,7 +23,7 @@ export default function HeroSection() {
         <div className="mx-auto grid max-w-7xl grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-2 items-start">
           <div className="lg:pr-4 order-2 lg:order-1">
             <div className="max-w-3xl text-gray-700">
-              <h1 className=" text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">
+              <h1 className="text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">
               ¿QUIÉNES SOMOS?
               </h1>
               <p className="mt-6 text-xl leading-8">
