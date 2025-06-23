@@ -72,7 +72,7 @@ const SalesAndRent = () => {
                 aria-label="Abrir menú de servicios"
               >
                 {menuOpen ? <HiX size={28} /> : <HiMenu size={28} />}
-                <span className="ml-2 text-lg font-medium">Servicios</span>
+                <span className="ml-2 text-lg font-medium">Venta y Alquileres</span>
               </button>
               {menuOpen && (
                 <div className="flex flex-col mt-4 w-full bg-white rounded shadow-lg z-50">
