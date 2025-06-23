@@ -112,7 +112,7 @@ const Training = () => {
     <div style={{ backgroundColor: '#f7950a' }} className="min-h-screen flex flex-col">
       <Navbar />
       <Whatsapp />
-      <main className="flex-grow mt-20 pb-20"> {/* <-- Agrega pb-16 para más espacio abajo */}
+      <main className="flex-grow mt-20 pb-20"> 
         <section>
           <div className="max-w-screen mx-auto px-4 sm:px-6 lg:px-8">
             {/* Menú hamburguesa solo en mobile */}
