@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Navbar from '@/app/components/Navbar';
 import Footer from '@/app/components/Footer';
 import Whatsapp from '@/app/components/Whatsapp';
+import { HiMenu, HiX } from 'react-icons/hi'; // Importa los íconos
 
 const servicios = [
   {
@@ -92,41 +93,72 @@ const servicios = [
 
 const Service = () => {
   const [activeTab, setActiveTab] = useState(servicios[0].id);
+  const [menuOpen, setMenuOpen] = useState(false); // Estado para el menú hamburguesa
 
   return (
     <div style={{ backgroundColor: '#f7950a' }} className="min-h-screen flex flex-col">
       <Navbar />
       <Whatsapp />
-      <main className="flex-grow h-screen mt-20 mb-50">
-
+      <main className="flex-grow mt-20 pb-20">
         <section>
           <div className="max-w-screen mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="mb-8 flex flex-wrap justify-center gap-4">
+            {/* Menú hamburguesa solo en mobile */}
+            <div className="mb-8 flex flex-col items-center sm:hidden">
+              <button
+                onClick={() => setMenuOpen(!menuOpen)}
+                className="flex items-center px-4 py-2 bg-gray-700 text-white rounded-md focus:outline-none"
+                aria-label="Abrir menú de servicios"
+              >
+                {menuOpen ? <HiX size={28} /> : <HiMenu size={28} />}
+                <span className="ml-2 text-lg font-medium">Servicios</span>
+              </button>
+              {menuOpen && (
+                <div className="flex flex-col mt-4 w-full bg-white rounded shadow-lg z-50">
+                  {servicios.map((servicio) => (
+                    <button
+                      key={servicio.id}
+                      onClick={() => {
+                        setActiveTab(servicio.id);
+                        setMenuOpen(false);
+                      }}
+                      className={`px-6 py-3 text-left rounded-md text-lg font-medium transition-colors ${
+                        activeTab === servicio.id
+                          ? 'bg-gray-700 text-white'
+                          : 'bg-gray-50 text-gray-700 hover:bg-gray-300'
+                      }`}
+                    >
+                      {servicio.title}
+                    </button>
+                  ))}
+                </div>
+              )}
+            </div>
+            {/* Menú horizontal en desktop */}
+            <div className="mb-8 justify-center gap-4 hidden sm:flex flex-wrap">
               {servicios.map((servicio) => (
                 <button
                   key={servicio.id}
                   onClick={() => setActiveTab(servicio.id)}
-                  className={`px-6 py-3 rounded-md text-lg font-medium transition-colors ${activeTab === servicio.id
-                    ? 'bg-gray-700 text-white'
-                    : 'bg-gray-50 text-gray-700 hover:bg-gray-300 hover: cursor-pointer'
-                    }`}
+                  className={`px-6 py-3 rounded-md text-lg font-medium transition-colors ${
+                    activeTab === servicio.id
+                      ? 'bg-gray-700 text-white'
+                      : 'bg-gray-50 text-gray-700 hover:bg-gray-300 hover: cursor-pointer'
+                  }`}
                 >
                   {servicio.title}
                 </button>
               ))}
             </div>
-
-            <div className="mt-12">
+            <div className="mt-8">
               {servicios.map((servicio) => (
                 <div
                   key={servicio.id}
-                  className={`${activeTab === servicio.id ? 'block' : 'hidden'
-                    }`}
+                  className={`${activeTab === servicio.id ? 'block' : 'hidden'}`}
                 >
-                  <div className="grid lg:grid-cols-2 gap-12 items-center">
+                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                     <div>
-                      <h2 className="text-3xl font-bold mb-6">{servicio.title}</h2>
-                      <p className="text-xl text-gray-700 mb-8">{servicio.description}</p>
+                      <h2 className="text-2xl sm:text-3xl font-bold mb-4">{servicio.title}</h2>
+                      <p className="text-base sm:text-xl text-gray-700 mb-6">{servicio.description}</p>
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         {servicio.details.map((detail, index) => (
                           <div key={index} className="flex items-center">
@@ -135,9 +167,8 @@ const Service = () => {
                           </div>
                         ))}
                       </div>
-
                     </div>
-                    <div className="relative h-96 rounded-lg overflow-hidden shadow-xl">
+                    <div className="relative h-64 sm:h-80 lg:h-96 rounded-lg overflow-hidden shadow-xl mt-6 lg:mt-0">
                       <img
                         src={servicio.image}
                         alt={servicio.title}
