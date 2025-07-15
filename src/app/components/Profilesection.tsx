@@ -64,28 +64,28 @@ export default function ProfileSection() {
                 </p>
               </div>
 
-              <h1 className="mt-10 px-2 py-2 text-center text-2xl sm:text-4xl font-semibold tracking-tight text-pretty text-gray-900 bg-white">
+              <h1 className="mt-10 px-2 py-2 text-center text-2xl sm:text-4xl font-semibold tracking-tight text-pretty text-gray-900 bg-white rounded">
                 SOLUCIONES INTELIGENTES
               </h1>
               <p className="text-lg sm:text-2xl flex text-center items-center mt-6 sm:mt-10 text-pretty">
                 Conociendo las necesidades de nuestros clientes, nos adaptamos a sus requerimientos y planteamos la adecuada solución
               </p>
 
-              <h1 className="mt-10 px-2 py-2 text-center text-2xl sm:text-4xl font-semibold tracking-tight text-pretty text-gray-900 bg-white">
+              <h1 className="mt-10 px-2 py-2 text-center text-2xl sm:text-4xl font-semibold tracking-tight text-pretty text-gray-900 bg-white rounded">
                 SEGURIDAD EN LO QUE HACEMOS
               </h1>
               <p className="text-lg sm:text-2xl flex text-center items-center mt-6 sm:mt-10 text-pretty">
                 Sabemos que lo más importante es nuestra vida y la de nuestros clientes. Por ello, todo lo que hacemos lo respaldamos con la mejor calidad y seguridad del servicio
               </p>
 
-              <h1 className="mt-10 px-2 py-2 text-center text-2xl sm:text-4xl font-semibold tracking-tight text-pretty text-gray-900 bg-white">
+              <h1 className="mt-10 px-2 py-2 text-center text-2xl sm:text-4xl font-semibold tracking-tight text-pretty text-gray-900 bg-white rounded">
                 FORMACIÓN CONSTANTE
               </h1>
               <p className="text-lg sm:text-2xl flex text-center items-center mt-6 sm:mt-10 text-pretty">
                 Parte de crecer es enseñar. Nos aseguramos que nuestros clientes reciban propuestas de capacitación en continua revisión de acuerdo con los últimos estándares de la industria
               </p> 
 
-              <h1 className="mt-10 px-2 py-2 text-center text-2xl sm:text-4xl font-semibold tracking-tight text-pretty text-gray-900 bg-white">
+              <h1 className="mt-10 px-2 py-2 text-center text-2xl sm:text-4xl font-semibold tracking-tight text-pretty text-gray-900 bg-white rounded">
                 ¿NO TIENEN EQUIPAMIENTO? 
               </h1>
               <h1 className="px-2 pb-2 text-center text-2xl sm:text-4xl font-semibold tracking-tight text-pretty text-gray-900 bg-white">
