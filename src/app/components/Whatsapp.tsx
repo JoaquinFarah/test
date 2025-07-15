@@ -20,7 +20,7 @@ export default function Whatsapp() {
         md:bottom-10 md:right-10
         w-14 h-14
         sm:w-16 sm:h-16
-        md:w-20 md:h-16
+        md:w-16 md:h-16
       "
     >
       <div className="flex items-center justify-center w-full h-full">
