@@ -58,7 +58,7 @@ export default function Index() {
             </div>
           ))}
         </Slider>
-        <div className="absolute top-1/2 left-1/2 w-[90vw] max-w-2xl md:max-w-3xl lg:max-w-4xl transform -translate-x-1/2 -translate-y-1/2 text-white text-center p-4 sm:p-6 md:p-4 backdrop-blur-xs bg-black/30 rounded-lg">
+        <div className="absolute top-1/2 left-1/2 w-[90vw] max-w-xl md:max-w-xl lg:max-w-xl transform -translate-x-1/2 -translate-y-1/2 text-white text-center p-4 sm:p-6 md:p-4 backdrop-blur-xs bg-black/30 rounded-lg">
           <div className="uppercase">
             <p className="py-1 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold">Precisión que</p>
             <p className="py-1 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold">
